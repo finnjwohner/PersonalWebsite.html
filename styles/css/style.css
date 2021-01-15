@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+}
+
+.page-line {
+  width: 10px;
+  height: 0%;
+  opacity: 0.6;
+  z-index: 1;
+  -webkit-transition: height 2s ease-in-out;
+  transition: height 2s ease-in-out;
+}
+
+.page-line-left {
+  position: absolute;
+  top: -10%;
+  float: left;
+  background-color: grey;
+}
+
+.page-line-right {
+  float: right;
+  margin-top: 50px;
+  background-color: #000;
+}
+
+::-moz-selection {
+  background: yellow;
+}
+
+::selection {
+  background: yellow;
+}
+
+header {
+  height: 1000px;
+  background: #fff url("../img/skye-bg.png") no-repeat;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
+header img {
+  display: none;
+}
+
+.container {
+  position: relative;
+  width: 1100px;
+  height: 100%;
+  margin: auto;
+}
+
+.line-container {
+  position: relative;
+  width: 1800px;
+  height: 100%;
+  margin: auto;
+}
+
+header .container h1 {
+  position: relative;
+  top: 120px;
+  line-height: 100%;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-weight: bold;
+  font-size: 9rem;
+  opacity: 0;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+header .container h2 {
+  position: relative;
+  top: 120px;
+  color: #ffffff;
+  font-family: "Courier New", serif;
+  font-weight: light;
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+header .container a {
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  bottom: 100px;
+  display: inline;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Courier New", serif;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: opacity 1s ease-in-out, background-color 0.2s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, background-color 0.2s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, background-color 0.2s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, background-color 0.2s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+header .container a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+main {
+  position: relative;
+  width: 1100px;
+  height: 900px;
+  margin: auto;
+}
+
+main p {
+  padding-bottom: 6rem;
+  position: relative;
+  top: 160px;
+  display: inline-block;
+  width: 75%;
+  font-family: "Courier New", serif;
+  font-size: 1.5rem;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #111;
+}
+
+section h1 {
+  color: #fff;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 100%;
+  position: relative;
+  top: -130px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+section p {
+  position: relative;
+  color: #fff;
+  font-family: "Courier New", serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 75%;
+}
+
+section a {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Courier New", serif;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+section a:hover {
+  background-color: white;
+  text-decoration: underline;
+}
+
+.language {
+  text-decoration: underline;
+  background-color: #fff899;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+
+.details {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links a {
+  cursor: pointer;
+  margin: 4rem 4rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Courier New", serif;
+  padding: 1rem 3rem;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.links a:hover {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.details p {
+  text-align: center;
+  font-family: "Courier New", serif;
+}
+
+.first-text, .second-text, .third-text {
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+@media only screen and (max-width: 1800px) {
+  .line-container {
+    width: 1400px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .line-container {
+    width: 1000px;
+  }
+  .container {
+    width: 900px;
+  }
+  main {
+    width: 900px;
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .page-line {
+    display: none;
+  }
+  .line-container {
+    width: 100%;
+  }
+  .container {
+    width: 800px;
+  }
+  main {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 600px;
+  }
+  main {
+    width: 600px;
+    height: 900px;
+  }
+  main p {
+    width: 100%;
+    text-align: left !important;
+  }
+  section h1 {
+    font-size: 7rem;
+    top: -100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    height: 700px;
+  }
+  .container {
+    width: 80%;
+  }
+  header .container h1 {
+    font-size: 7rem;
+  }
+  header .container h2 {
+    font-size: 1rem;
+  }
+  header .container a {
+    font-size: 0.7rem;
+  }
+  main p {
+    top: 60px;
+    font-size: 1.3rem;
+  }
+  section {
+    height: 600px;
+  }
+  section p {
+    font-size: 1.3rem;
+  }
+  section a {
+    font-size: 1.1rem;
+  }
+  main {
+    width: 80%;
+    height: 700px;
+  }
+  .links a {
+    margin: 2rem;
+  }
+  .details p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .container h1 {
+    font-size: 6rem;
+  }
+  section h1 {
+    font-size: 6rem;
+    top: -90px;
+  }
+  main {
+    height: 500px;
+  }
+  main p {
+    font-size: 1rem;
+    padding-bottom: 4rem;
+  }
+  section {
+    height: 500px;
+  }
+  section p {
+    font-size: 1rem;
+  }
+  section a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    height: 600px;
+  }
+  header .container h1 {
+    font-size: 5rem;
+    top: 60px;
+  }
+  section h1 {
+    font-size: 5rem;
+    top: -75px;
+  }
+  header .container h2 {
+    top: 60px;
+  }
+  .links a {
+    padding: 0.6rem 1.2rem;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  main {
+    height: 550px;
+  }
+  section h1 {
+    font-size: 4.5rem;
+    top: -70px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main {
+    height: 600px;
+  }
+  header {
+    height: 500px;
+  }
+  .container {
+    width: 90%;
+  }
+  header .container h1 {
+    font-size: 4rem;
+  }
+  section h1 {
+    font-size: 4rem;
+    top: -62px;
+  }
+  section {
+    height: 450px;
+  }
+  header .container h2 {
+    font-size: 0.9rem;
+  }
+  header .container a {
+    bottom: 50px;
+  }
+  .details p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  main {
+    height: 400px;
+  }
+  .details a {
+    font-size: 0.7rem;
+  }
+  header {
+    height: 400px;
+  }
+  header .container h1 {
+    font-size: 3rem;
+    top: 30px;
+  }
+  section h1 {
+    font-size: 3rem;
+    top: -45px;
+  }
+  header .container h2 {
+    font-size: 0.7rem;
+    top: 30px;
+  }
+  header .container a {
+    font-size: 0.6rem;
+  }
+  main p {
+    font-size: 0.7rem;
+    padding-bottom: 2rem;
+  }
+  section {
+    height: 350px;
+  }
+  section p {
+    font-size: 0.7rem;
+    width: 80%;
+  }
+  section a {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
