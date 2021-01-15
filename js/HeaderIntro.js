@@ -1,21 +1,6 @@
 const imgs = document.images;
 let counter = 0;
 
-const incrementCounter = () => {
-    counter++;
-    if(counter == imgs.length)
-        fadeIn();
-}
-
-Array.prototype.forEach.call(imgs, function(img) {
-    if(img.complete)
-        incrementCounter();
-    else {
-        img.addEventListener('load', incrementCounter);
-    }
-        
-})
-
 const fadeIn = () => {
     const header = document.querySelector('header');
     header.style.opacity = 1;
@@ -43,3 +28,18 @@ const fadeIn = () => {
         locationA.style.transform = 'translateY(0)';
     }, 1700);
 }
+
+const incrementCounter = () => {
+    counter++;
+    if(counter == imgs.length)
+        fadeIn();
+}
+
+Array.prototype.forEach.call(imgs, function(img) {
+    if(img.complete)
+        incrementCounter();
+    else {
+        img.addEventListener('load', incrementCounter);
+    }
+        
+})
