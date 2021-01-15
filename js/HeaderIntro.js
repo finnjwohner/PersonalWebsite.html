@@ -2,6 +2,9 @@ const imgs = document.images;
 let counter = 0;
 
 const fadeIn = () => {
+    const html = document.querySelector('html');
+    html.style.overflow = 'auto';
+
     const header = document.querySelector('header');
     header.style.opacity = 1;
     
