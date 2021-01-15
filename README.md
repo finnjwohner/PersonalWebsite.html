@@ -1,5 +1,5 @@
 # PersonalWebsite.html
-This is the personal website I worked on just to show people that I know how to use HTML &amp; CSS as well as a little JavaScript when applying for internships.
+This is the personal website I worked on back in mid 2020 just to show people that I know how to use HTML &amp; CSS as well as a little JavaScript when applying for internships.
 
 [View it here](https://frrinz.github.io/PersonalWebsite.html/)
 
