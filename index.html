@@ -9,6 +9,24 @@
         <meta name="description" content="I'm Finn Wohner, a student and aspiring web developer, glad you're here!">
         <meta name="author" content="Finn Wohner">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header {
+                opacity: 0;
+                transition: opacity 1s ease-out;
+            }
+
+            header .container h1 {
+                opacity: 0;
+                transform: translateY(-60px);
+                transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            }
+
+            header .container h2 {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -56,7 +74,7 @@
         <footer>
             <div class="details">
                 <div class="links">
-                    <a href="https://finnwohner.co.uk/finn-wohner-cv.pdf" target="_blank">Download CV</a>
+                    <a href="https://finnjwohner.com/finn-wohner-cv.pdf" target="_blank">Download CV</a>
                     <a href="mailto:finnjwohner@gmail.com">Contact</a>
                 </div>
                 <p>

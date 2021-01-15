@@ -35,9 +35,6 @@ header {
     height: 1000px;
     background: #fff url('../img/skye-bg.png') no-repeat;
     background-size: cover;
-
-    opacity: 0;
-    transition: opacity 1s ease-out;
 }
 
 header img {
@@ -66,10 +63,6 @@ header .container h1 {
     font-family: "Lucida Sans Unicode", sans-serif;
     font-weight: bold;
     font-size: 9rem;
-
-    opacity: 0;
-    transform: translateY(-60px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 header .container h2 {
@@ -80,10 +73,6 @@ header .container h2 {
     font-family: "Courier New", serif;
     font-weight: light;
     font-size: 1.4rem;
-
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 header .container a {
