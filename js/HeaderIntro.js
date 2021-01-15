@@ -2,9 +2,6 @@ const imgs = document.images;
 let counter = 0;
 
 const fadeIn = () => {
-    const html = document.querySelector('html');
-    html.style.overflow = 'auto';
-
     const header = document.querySelector('header');
     header.style.opacity = 1;
     
@@ -30,6 +27,11 @@ const fadeIn = () => {
         locationA.style.opacity = 1;
         locationA.style.transform = 'translateY(0)';
     }, 1700);
+
+    const html = document.querySelector('html');
+    setTimeout(function() {
+        html.style.overflow = 'auto';
+    }, 1750);
 }
 
 const incrementCounter = () => {
